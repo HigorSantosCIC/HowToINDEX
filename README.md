@@ -136,7 +136,7 @@ output {
 
     elasticsearch {
      hosts => ["localhost:9200"]
-     index => "status_implantacao_prontuario_eletronico_municipio"
+     index => "modelo_exemplo"
     }
 }
 ```
