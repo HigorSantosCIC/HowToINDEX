@@ -76,6 +76,10 @@ PUT modelo_exemplo
 
 # Implementação
 
+- Através da ferramenta LogStash, será realizada a tranformação do modelo_exemplo.csv em um formato indexavel no ElasticSearch, e para isso, deve-se configurar o arquivo.conf com os dados de entrada, filtro e saida.
+- Neste caso, a entrada está no formato CSV.
+- E para execução do mesmo, é importante descrever no arquivo, as colunas presentes no mesmo.
+
 - Configuração do Arquivo  .conf
 
 ```sh
