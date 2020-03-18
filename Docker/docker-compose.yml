@@ -1,0 +1,22 @@
+version: '3.0'
+services:
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.4.2
+    container_name: elasticsearchMS
+    environment:
+      - discovery.type=single-node
+    volumes:
+      - MS_kibana:/usr/share/elasticsearch/data
+    ports:
+      - "9200:9200"
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:7.4.2
+    environment:
+      SERVER_NAME: kibana.example.org
+      ELASTICSEARCH_URL: http://localhost:9200
+    ports:
+      - "5601:5601"
+volumes:
+  MS_kibana:
+
