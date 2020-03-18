@@ -53,8 +53,8 @@ docker-compose up
 
 # Kibana
 
-Usando a ferrametnta Dev Tools do Kibana, é bem simples criar o índice, conforme o print acima
-Para este índice, segue abaixo o modelo de criação com PUT
+Usando a ferrametnta Dev Tools do Kibana, é bem simples criar o índice, conforme o codigo abaixo
+Para este índice, segue o modelo de criação com PUT
 
 ``` http 
 DELETE modelo_exemplo
